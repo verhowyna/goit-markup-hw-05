@@ -109,6 +109,7 @@ body {
   color: var(--first-title-color);
   padding-top: 24px;
   padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -128,6 +129,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--first-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -560,4 +562,26 @@ body {
 .social-media-link:hover,
 .social-media-link:focus {
   background-color: #31d0aa;
+}
+
+/* ----------- MODAL ---------- */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  height: 584px;
+  background-color: #fcfcfc;
 }
