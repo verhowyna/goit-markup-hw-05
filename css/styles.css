@@ -123,6 +123,7 @@ body {
   left: 0;
   bottom: -1px;
   background: var(--accent-color);
+  color: var(--accent-color);
   border-radius: 2px;
   content: "";
 }
